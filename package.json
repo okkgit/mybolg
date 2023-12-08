@@ -1,0 +1,14 @@
+{
+  "name": "myblog",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "element-plus": "^2.4.3"
+  }
+}
