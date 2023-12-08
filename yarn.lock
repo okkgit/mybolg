@@ -672,6 +672,15 @@
     "@vuepress/core" "2.0.0-rc.0"
     prismjs "^1.29.0"
 
+"@vuepress/plugin-register-components@^2.0.0-rc.0":
+  version "2.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-rc.0.tgz#1e11dab32740d9cd1a659991400339d82e685e95"
+  integrity sha512-yN71x93j8ce99bqOwHn3lVfgiwsfhv21ByW/3em1kGXANjzOOoXOvt7ITbXNa5g6bsfjdJpoeUkUtFPwfK8dNA==
+  dependencies:
+    "@vuepress/core" "2.0.0-rc.0"
+    "@vuepress/utils" "2.0.0-rc.0"
+    chokidar "^3.5.3"
+
 "@vuepress/plugin-theme-data@2.0.0-rc.0":
   version "2.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-theme-data/-/plugin-theme-data-2.0.0-rc.0.tgz#ec5f7416fd79cb523277ff41e96408246ee5c004"
@@ -986,6 +995,29 @@ esbuild@^0.19.3, esbuild@~0.19.5:
   version "0.19.8"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.19.8.tgz#ad05b72281d84483fa6b5345bd246c27a207b8f1"
   integrity sha512-l7iffQpT2OrZfH2rXIp7/FkmaeZM0vxbxN9KfiCwGYuZqzMg/JdvX26R31Zxn/Pxvsrg3Y9N6XTcnknqDyyv4w==
+  optionalDependencies:
+    "@esbuild/android-arm" "0.19.8"
+    "@esbuild/android-arm64" "0.19.8"
+    "@esbuild/android-x64" "0.19.8"
+    "@esbuild/darwin-arm64" "0.19.8"
+    "@esbuild/darwin-x64" "0.19.8"
+    "@esbuild/freebsd-arm64" "0.19.8"
+    "@esbuild/freebsd-x64" "0.19.8"
+    "@esbuild/linux-arm" "0.19.8"
+    "@esbuild/linux-arm64" "0.19.8"
+    "@esbuild/linux-ia32" "0.19.8"
+    "@esbuild/linux-loong64" "0.19.8"
+    "@esbuild/linux-mips64el" "0.19.8"
+    "@esbuild/linux-ppc64" "0.19.8"
+    "@esbuild/linux-riscv64" "0.19.8"
+    "@esbuild/linux-s390x" "0.19.8"
+    "@esbuild/linux-x64" "0.19.8"
+    "@esbuild/netbsd-x64" "0.19.8"
+    "@esbuild/openbsd-x64" "0.19.8"
+    "@esbuild/sunos-x64" "0.19.8"
+    "@esbuild/win32-arm64" "0.19.8"
+    "@esbuild/win32-ia32" "0.19.8"
+    "@esbuild/win32-x64" "0.19.8"
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -1481,6 +1513,18 @@ rollup@^4.2.0, rollup@^4.4.1:
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.6.1.tgz#351501c86b5b4f976dde8c5837516452b59921f8"
   integrity sha512-jZHaZotEHQaHLgKr8JnQiDT1rmatjgKlMekyksz+yk9jt/8z9quNjnKNRoaM0wd9DC2QKXjmWWuDYtM3jfF8pQ==
   optionalDependencies:
+    "@rollup/rollup-android-arm-eabi" "4.6.1"
+    "@rollup/rollup-android-arm64" "4.6.1"
+    "@rollup/rollup-darwin-arm64" "4.6.1"
+    "@rollup/rollup-darwin-x64" "4.6.1"
+    "@rollup/rollup-linux-arm-gnueabihf" "4.6.1"
+    "@rollup/rollup-linux-arm64-gnu" "4.6.1"
+    "@rollup/rollup-linux-arm64-musl" "4.6.1"
+    "@rollup/rollup-linux-x64-gnu" "4.6.1"
+    "@rollup/rollup-linux-x64-musl" "4.6.1"
+    "@rollup/rollup-win32-arm64-msvc" "4.6.1"
+    "@rollup/rollup-win32-ia32-msvc" "4.6.1"
+    "@rollup/rollup-win32-x64-msvc" "4.6.1"
     fsevents "~2.3.2"
 
 run-parallel@^1.1.9:

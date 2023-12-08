@@ -1,9 +1,19 @@
+const { path } = require('@vuepress/utils')
 import { defaultTheme, defineUserConfig, viteBundler } from 'vuepress';
 
 export default defineUserConfig({
   base: '/',
   title: 'VuePress Starter',
   description: 'VuePress Starter Project in Stackblitz',
+
+  plugins: [
+    [
+      '@vuepress/plugin-register-components',
+      {
+        componentsDir: path.resolve(__dirname, './')
+      }
+    ]
+  ],
 
   bundler: viteBundler({
     // vite bundler options here
