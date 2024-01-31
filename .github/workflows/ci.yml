@@ -1,37 +1,33 @@
-name:  CI
- 
+name: Deploy GitHub Pages
+
 on:
-  workflow_dispatch:
   push:
-    branches: 
-      - master
+    branches:
+      - main
+
 jobs:
-  # jobs的id
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: 获取代码
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
-        
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Set Node.js
-        uses: actions/setup-node@v3
+      
+      - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
           cache: 'pnpm'
- 
+
+      - name: yarn工具安装
+        run: npm install pnpm -g
+
       - name: Build
         run: pnpm install && pnpm build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - name: 部署
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          repository-name: okkgit/myblog
-          branch: deploy-pages
-          folder: dist
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
