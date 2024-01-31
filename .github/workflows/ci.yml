@@ -17,13 +17,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          cache: 'pnpm'
-
-      - name: yarn工具安装
-        run: npm install pnpm -g
+          cache: 'npm'
 
       - name: Build
-        run: pnpm install && pnpm build
+        run: npm install && npm build
 
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@releases/v3
